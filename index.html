@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel Lal Malani | Computer Engineering Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --accent: #38bdf8;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--secondary);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 30px; }
+
+        .intro-text { font-size: 1.2rem; color: #64748b; margin-bottom: 30px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--primary);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Styling for the new Contact Section */
+        .contact-section {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-contact:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            text-decoration: none;
+            color: var(--secondary);
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .social-icon:hover {
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            .container { width: 85%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my website</h1>
+        <p>Live on GitHub • Built by Neel Lal Malani</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p class="intro-text">Hello! My name is <strong>Neel Lal Malani</strong>.</p>
+            <p>
+                I am a passionate student currently studying at <strong>VES Polytechnic</strong>. 
+                I have chosen the path of <strong>Computer Engineering</strong> because I am fascinated 
+                by how software shapes the world we live in today.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Education</h3>
+                <p><strong>Diploma in Computer Engineering</strong><br>
+                Vivekanand Education Society's Polytechnic</p>
+            </div>
+            <div class="card">
+                <h3>My Journey</h3>
+                <p>This is my very first website! I am learning how to host projects live using <strong>GitHub</strong> 
+                to build a digital presence for my future career.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Computer Hardware</span>
+                <span class="skill-tag">Computer software</span>
+                <span class="skill-tag">C Programming</span>
+                <span class="skill-tag">Linux Programming</span>
+                <span class="skill-tag">Professional communication</span>
+                <span class="skill-tag">Logical Reasoning</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>My Goals</h2>
+            <p>As a Computer Engineering student, my goal is to master full-stack development and eventually contribute to open-source projects that help the community.</p>
+        </section>
+
+        <section class="contact-section">
+            <h2>Get In Touch with me </h2>
+            <a href="mailto:co2025.neel.malani@ves.ac.in" class="btn-contact">
+                <i class="fas fa-paper-plane"></i> Send me an Email
+            </a>
+
+            <div class="social-links">
+                
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:co2025.neel.malani@ves.ac.inS" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Created by Neel Lal Malani. with passion and code.</p>
+    </footer>
+
+</body>
+</html>
